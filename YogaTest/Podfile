@@ -1,0 +1,9 @@
+platform :ios, '15.0'
+
+use_frameworks!
+
+target 'YogaTest' do
+  pod 'YogaKit', '~> 1.5'
+  pod 'AlamofireImage', '~> 4.1'
+end
+

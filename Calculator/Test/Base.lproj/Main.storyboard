@@ -25,10 +25,10 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="67F-HN-B0x">
+                                    <stackView autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="67F-HN-B0x">
                                         <rect key="frame" x="0.0" y="142" width="414" height="142"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b15-gS-1Lu">
+                                            <button autoresizesSubviews="NO" opaque="NO" tag="70" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b15-gS-1Lu">
                                                 <rect key="frame" x="0.0" y="0.0" width="103.5" height="142"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="AC"/>
@@ -173,10 +173,10 @@
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kml-s8-Hef">
+                                    <stackView autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kml-s8-Hef">
                                         <rect key="frame" x="0.0" y="710" width="414" height="142"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zne-ui-wQE">
+                                            <button autoresizesSubviews="NO" opaque="NO" tag="10" contentMode="bottomLeft" placeholderIntrinsicWidth="138" placeholderIntrinsicHeight="142" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zne-ui-wQE">
                                                 <rect key="frame" x="0.0" y="0.0" width="138" height="142"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="0"/>
@@ -201,6 +201,12 @@
                                                 </connections>
                                             </button>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Zne-ui-wQE" firstAttribute="top" secondItem="Kml-s8-Hef" secondAttribute="top" id="XeO-dL-3KW"/>
+                                            <constraint firstItem="Zne-ui-wQE" firstAttribute="leading" secondItem="Kml-s8-Hef" secondAttribute="leading" id="dqY-M3-d70"/>
+                                            <constraint firstItem="Zne-ui-wQE" firstAttribute="leading" secondItem="Kml-s8-Hef" secondAttribute="leading" id="exF-eQ-JNZ"/>
+                                            <constraint firstItem="Zne-ui-wQE" firstAttribute="top" secondItem="Kml-s8-Hef" secondAttribute="top" id="txY-z2-zDT"/>
+                                        </constraints>
                                     </stackView>
                                 </subviews>
                             </stackView>
